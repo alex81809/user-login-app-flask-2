@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="border">
+
+            <div class="header">
+                <h1 class="word">Login</h1>
+            </div>
+
+            <form action="/login" method="POST">
+
+                <div class="msg">{{ msg }}</div>
+
+                <input id="username" name="username" type="text" placeholder="Enter your username" class="textbox" required>
+
+                <input id="password" name="password" type="password" placeholder="Enter your password" class="textbox" required>
+
+                <input type="submit" value="Sign in" class="btn">
+
+            </form>
+
+            <p class="bottom">
+                Don't have an account?
+                <a href="/register">Sign up here</a>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
