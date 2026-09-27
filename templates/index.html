@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="border">
+            <div class="header">
+                <h1 class="word">Welcome</h1>
+            </div>
+
+            <h1 class="bottom">
+                Hi {{ name }}!!
+                <br><br>
+
+                {{ msg }}!!
+                <br><br>
+
+                You are welcome
+                <br><br>
+
+                Happy to have you here...
+            </h1>
+
+            <a href="/logout" class="btn logout">Log out</a>
+        </div>
+    </div>
+</body>
+</html>
